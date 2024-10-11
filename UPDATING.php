@@ -11,14 +11,15 @@
     <pre> 
     <?php
 
-// Updating a patients from the database
+// Updating a doctors from the database
 
-	$query = "UPDATE eax_comsci_students SET first_name = ?, last_name = ? WHERE id = 302";
+	$query = "UPDATE doctors SET first_name = ?, last_name = ? WHERE id = 1234";
 
 	 $stmt = $pdo->prepare($query);
+
 //If the query is executed then the data must be presented
 	 $executeQuery = $stmt->execute(
-	 	["Ivan", "Duane"]
+	 	["Rhaenys", "Ive"]
 	 );
 
 	if ($executeQuery) {
