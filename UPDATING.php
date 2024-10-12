@@ -13,7 +13,7 @@
 
 // Updating a doctors from the database
 
-	$query = "UPDATE doctors SET first_name = ?, last_name = ? WHERE id = 1234";
+	$query = "UPDATE doctors SET first_name = ?, last_name = ? WHERE doctor_id = 35619";
 
 	 $stmt = $pdo->prepare($query);
 
